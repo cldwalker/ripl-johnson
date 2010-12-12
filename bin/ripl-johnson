@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'ripl'
+require 'ripl/johnson'
+ARGV << '-F'
+Ripl.config[:history] = '~/.johnson_history'
+Ripl.start :name => 'johnson', :irbrc => false, :prompt => 'js>> '
