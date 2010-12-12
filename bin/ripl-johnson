@@ -3,6 +3,8 @@
 require 'ripl'
 require 'ripl/johnson'
 require 'ripl/johnson/multi_line'
+require 'ripl/johnson/completion'
 ARGV << '-F'
 Ripl.config[:history] = '~/.johnson_history'
-Ripl.start :name => 'johnson', :irbrc => false, :prompt => 'js>> '
+Ripl.start :name => 'johnson', :irbrc => false, :prompt => 'js>> ',
+  :completion => false
