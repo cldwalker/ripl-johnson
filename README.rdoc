@@ -1,0 +1,38 @@
+== Description
+A javscript shell based on {johnson}[https://github.com/jbarnette/johnson] a.k.a mozilla's
+tracemonkey. Since this uses {ripl}[http://github.com/cldwalker/ripl], it comes with most irb
+functionality: autocompletion (very basic currently), history (~/.johnson_history) and multi-line
+support.
+
+== Install
+Install the gem with:
+
+    sudo gem install ripl-johnson
+
+== Usage
+
+    $ ripl johnson
+
+    js>> f[TAB]
+    false     finally   for       function
+    js>> fu[TAB]
+    js>> function
+    js>> function ohai() {
+       > print("This ain't no browser");
+       > }
+    => nil
+
+    >> o[TAB]
+    >> ohai
+    >> ohai()
+    This ain't no browser
+    => nil
+
+== Todo
+* Add autocompletion for js methods!
+* Remove ruby autocompletions from bond
+* Add a ~/.johnsonrc
+* Add commandline option to autoload js files from rails projects
+* Add commandline option for loading files (like johnson executable)
+* Add rb and js functionality (like johnson executable)
+* Add _ for last js result
