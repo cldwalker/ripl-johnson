@@ -2,5 +2,5 @@
 
 require 'ripl'
 require 'ripl/johnson'
-Ripl.start :name => 'johnson', :irbrc => false, :prompt => 'js>> ',
+Ripl.start :name => 'johnson', :irbrc => '~/.johnsonrc', :prompt => 'js>> ',
   :completion => false, :riplrc => false, :history => '~/.johnson_history'

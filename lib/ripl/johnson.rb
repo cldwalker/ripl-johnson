@@ -16,9 +16,16 @@ module Ripl::Johnson
   def self.runtime
     @runtime ||= ::Johnson::Runtime.new
   end
+
+  module Runner
+    def load(file)
+      Ripl::Johnson.runtime.load(File.expand_path(file))
+    end
+  end
 end
 
 Ripl::Shell.send :include, Ripl::Johnson
+Ripl::Runner.extend Ripl::Johnson::Runner
 
 # Needs to wrap Ripl::Johnson#loop_eval
 require 'ripl/johnson/multi_line'
