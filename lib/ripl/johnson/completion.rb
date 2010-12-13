@@ -3,7 +3,7 @@ module Ripl::Johnson::Completion
   def before_loop
     super
     Ripl::Johnson::Completion.start
-  end 
+  end
 
   # From https://developer.mozilla.org/en/JavaScript/Reference
 
@@ -31,4 +31,4 @@ module Ripl::Johnson::Completion
   end
 end
 
-Ripl::Shell.send  :include, Ripl::Johnson::Completion
+Ripl::Shell.send :include, Ripl::Johnson::Completion
