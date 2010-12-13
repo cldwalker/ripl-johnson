@@ -1,7 +1,6 @@
 require 'johnson/cli'
 require 'ripl'
 require 'ripl/johnson/version'
-require 'ripl/johnson/multi_line'
 require 'ripl/johnson/completion'
 
 module Ripl::Johnson
@@ -20,3 +19,6 @@ module Ripl::Johnson
 end
 
 Ripl::Shell.send :include, Ripl::Johnson
+
+# Needs to wrap Ripl::Johnson#loop_eval
+require 'ripl/johnson/multi_line'
