@@ -13,10 +13,13 @@ Install the gem with:
 
     $ ripl johnson
 
+    # tab completion
     js>> f[TAB]
     false     finally   for       function
     js>> fu[TAB]
     js>> function
+
+    # multi-line support (Ctrl-C to break out of incorrect multi-line)
     js>> function ohai() {
        > print("This ain't no browser");
        > }
