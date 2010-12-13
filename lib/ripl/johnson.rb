@@ -1,5 +1,8 @@
-require 'ripl'
 require 'johnson/cli'
+require 'ripl'
+require 'ripl/johnson/version'
+require 'ripl/johnson/multi_line'
+require 'ripl/johnson/completion'
 
 module Ripl::Johnson
   def before_loop
