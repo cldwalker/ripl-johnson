@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = "gabriel.horner@gmail.com"
   s.homepage    = "http://github.com/cldwalker/ripl-johnson"
   s.summary = "A javascript shell using johnson (mozilla's tracemonkey)"
-  s.description =  "A javscript shell based on johnson a.k.a mozilla's tracemonkey. Since this uses ripl, it comes with most irb functionality: a global config(~/.johnsonrc), autocompletion (very basic currently), history (~/.johnson_history) and multi-line support."
+  s.description =  "A full-featured javscript shell based on johnson a.k.a mozilla's tracemonkey. Since this uses ripl, it comes with most irb functionality: a global config(~/.johnsonrc), autocompletion (very basic currently), history (~/.johnson_history) and multi-line support."
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project = 'tagaholic'
   s.executables = ['ripl-johnson']
