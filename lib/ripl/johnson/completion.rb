@@ -17,7 +17,9 @@ module Ripl::Johnson::Completion
     isNaN parseFloat parseInt Infinity Math NaN undefined}
 
   def self.start
-    Bond.start(:default_mission=>lambda {|e| Ripl::Johnson::Completion.default_action })
+    Bond.start(:bare=>true,
+      :default_mission=>lambda {|e| Ripl::Johnson::Completion.default_action })
+    Bond.complete :all_methods => true
   end
 
   def self.default_action
